@@ -2,16 +2,12 @@
 
 print("+ for Addition\n- for Substraction\n* for Multiplication \n/ for float Division \n** for exponentiation \n// for integer division\n% for Modulo operation \n")
 
-# Input two numbers :
-
-num1 = int(input("Enter first number : "))
+num1 = int(input("Enter first number : "))                  # Input two numbers :
 num2 = int(input("Enter second number : "))
 
-# Select any operation which you want to do ...
+operation = input("Select any operation... :")              # Select any operation which you want to do ...
 
-operation = input("Select any operation... :")
-
-if (operation == '+'):
+if (operation == '+'):                                      # Faulty for (56+9 = 77) ... (45*3 = 555) ... (56/6 = 4)
     if (num1 == 56 and num2 == 9):
         print("56 + 9 = 77")
     else:
